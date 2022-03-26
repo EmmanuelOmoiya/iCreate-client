@@ -1,7 +1,7 @@
 const Automatorpage = () => {
     return (  
-        <div className="automato">
-            
+        <div className="automator">
+            <h1>Automator Page</h1>
         </div>
     );
 }

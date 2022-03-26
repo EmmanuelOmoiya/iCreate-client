@@ -1251,6 +1251,7 @@ input[type="file"]{
   font-weight: 600;
   padding: 7px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .getstarted{
@@ -1265,6 +1266,7 @@ input[type="file"]{
   font-weight: 500;
   padding: 7px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 
@@ -1279,7 +1281,7 @@ input[type="file"]{
 }
 
 .sponsors img{
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .projectlinked{
