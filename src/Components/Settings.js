@@ -1,7 +1,4 @@
-import profileImg from '../Assets/logo512.png';
-import profileTop from '../Assets/EmptyCreatePage.png';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 
 const Settings = () => {
 
