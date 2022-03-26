@@ -12,7 +12,7 @@ const Landingpage = () => {
                     <p className="Home">Home</p>
                     <Link to="/projects" classname="button-link"> <p className="community">Community</p></Link>
                 </div>
-                <Link to="/signup" classname="button-link"></Link><button className="landing-signup">Sign Up</button></Link>
+                <Link to="/signup" classname="button-link"><button className="landing-signup">Sign Up</button></Link>
             </div>
             <div className="landinghero">
                 <div className="landing-hero-catch">
