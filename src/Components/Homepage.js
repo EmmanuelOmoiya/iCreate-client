@@ -6,6 +6,8 @@ import audLogo from '../Assets/count-icon1.svg';
 import appLogo from '../Assets/count-icon.svg';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import SideDrawer from './SideDrawer';
+import TopBar from './TopBar';
 const data = userData;
 const dataKey="Active User";
 let grid;
@@ -23,7 +25,10 @@ const Homepage = () => {
     const num = axios.get(`http://localhost:5000/api/project/${user.fullName}`);
     const dpNum = num.length;
     return ( 
-        <div className="homepage">
+        <>
+        <TopBar/>
+        <SideDrawer/>
+            <div className="homepage">
             <div className="hero-prompt">
                 <p className="hero-greet">
                     Hello {user.fullName},
@@ -83,6 +88,7 @@ const Homepage = () => {
                 </ResponsiveContainer>
             </div>
         </div>
+        </>
     );
 }
  

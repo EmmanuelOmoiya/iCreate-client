@@ -253,7 +253,8 @@ label p{
 .create,
 .designs,
 .projects,
-.settings{
+.settings,
+.project{
   padding-left: 280px;
   padding-top: 80px;
   height: 100vw;
@@ -409,14 +410,13 @@ label p{
 .top-icon{
   height: 32px;
   width: 32px;
-  margin-right: 20px;
   border-radius: 50%;
   background-color: #eee;
   float: right;
   text-align: center;
   align-items: center;
   cursor: pointer;
-  margin-top: -30px;
+  margin-top: -45px;
 }
 
 .l{
@@ -480,6 +480,7 @@ label p{
 .prompt-in{
   display: flex;
   float: right;
+  margin-top: -45px;
 }
 
 .prompt-signup{
@@ -727,7 +728,7 @@ label p{
   height: 250px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
+  background-color: rgb(182, 182, 182);
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 10px;
@@ -738,14 +739,15 @@ label p{
   text-align: center;
   margin-left: 34%;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 30px;
   align-items: center;
 }
 
 .designs-coming-prompt{
+  color: #2121FF;
   text-align: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* Projects page style */
@@ -1097,7 +1099,7 @@ hr{
 
 .tui-image-editor-help-menu.top,
 .tui-image-editor-header{
-  display: none;
+  display: block;
 }
 
 .tui-image-editor-menu{
@@ -1152,5 +1154,140 @@ input[type="file"]{
 
 .picture-display{
   width: 40%;
-  height: 300px;
+  height: 100%;
+}
+
+/* Landing Page */
+
+.landingpage{
+  background-color: #eee;
+  height: 100%;
+}
+
+.header{
+  display: flex;
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.landinglogo{
+  width: 300px;
+  height: 50px;
+}
+
+.text{
+  display: flex;
+  font-weight: 500;
+}
+
+.Home{
+  margin-right: 40px;
+  color: #2121FF;
+}
+
+.landing-signup{
+  background-color: rgb(200, 50, 50);
+  color: #fff;
+  height: 40px;
+  width: 90px;
+  border-radius: 7px;
+  font-family: inherit;
+  border: none;
+  font-size: 15px;
+  margin-right: 100px;
+}
+
+.landing-hero-catch{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.landinghero{
+  padding: 20px;
+  text-align: center;
+}
+
+.landing-hero-catch-title{
+  font-size: 57px;
+  color: #2121FF;
+  margin-bottom: 20px;
+}
+
+.landing-hero-catch-text{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imptick{
+  color: rgb(200, 50, 50);
+}
+
+.landing-buttons{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.demo{
+  background-color: #fff;
+  border: 1px solid #2121FF;
+  color: #2121FF;
+  height: 40px;
+  width: 130px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px;
+  margin-right: 20px;
+}
+
+.getstarted{
+  color: #fff;
+  border: none;
+  background-color: #2121FF;
+  height: 40px;
+  width: 130px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+
+.cnter{
+  margin-top: 60px;
+}
+
+.sponsors{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.sponsors img{
+  margin-left: 20px;
+}
+
+.projectlinked{
+  text-decoration: none;
+  color: #000;
+}
+
+.button-link{
+  text-decoration: none;
+  color: #000;
 }

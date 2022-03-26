@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-
+import SideDrawer from './SideDrawer';
+import TopBar from './TopBar';
 const Settings = () => {
 
     const [user, setUser] = useState("");
@@ -43,6 +44,9 @@ const Settings = () => {
     }
 
     return (
+        <>
+        <TopBar/>
+        <SideDrawer/>
         <div className="settings">
             <h2 className='settings-title'>Settings</h2>
             <div className="settings-main">
@@ -116,6 +120,7 @@ const Settings = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 }
  

@@ -8,20 +8,22 @@ import TopBar from './Components/TopBar';
 import Designs from './Components/Designs';
 import Projects from './Components/Projects';
 import Settings from './Components/Settings';
+import Project from './Components/Project';
 import './App.css';
 import Landingpage from './Components/Landingpage';
+import Automatorpage from './Components/Automatorpage';
 
 function App() {
   return (
     <Router> 
-      <TopBar/>
       <div className="App">
-      <SideDrawer/>
         <Routes>
             <Route path="/login" element={<SignIn/>} />
             <Route path="/signup" element={<SignUp/>} />
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/" element={<Landingpage/>}/>
+            <Route path="/demo" element={<Automatorpage/>} />
+            <Route path='/projects/:id' element={<Project/>} />
             <Route path="/create" element={
               <ProtectedRoute redirectTo="/login">
                 <Create/>

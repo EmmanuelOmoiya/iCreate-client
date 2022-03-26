@@ -9,6 +9,7 @@ const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [interchange, setInterChange] = useState(false);
+    const [isPending, setIsPending] = useState(false);
 
     const submitForm = async (e) =>{
         e.preventDefault();
@@ -17,6 +18,7 @@ const SignIn = () => {
             Show("Please fil all the fields")
             return;
         }
+        setIsPending(true);
 
         try{
             const config = {
@@ -26,6 +28,7 @@ const SignIn = () => {
             };
             const { data } = await axios.post("http://localhost:4080/api/user/login", {email, password} , config);
                 localStorage.setItem("userInfo", JSON.stringify(data));
+                setIsPending(false);
                 window.location.replace('/dashboard');
         } catch (error){
             Show("An Error occured");
@@ -69,7 +72,7 @@ const SignIn = () => {
                     <input className='signin-input' type={interchange ? 'text' : 'password'} placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                     <span className="icon-change"><FaRegEyeSlash onClick={put} className='iconst noeyes'/><IoEyeSharp onClick={put}  className='iconst eyes' /></span>
                     <p className="forgot">Forgot password?</p>
-                    <button className="submit" onClick={submitForm}>Sign In</button>
+                    { isPending ? <button className="submit" disabled>Signing In...</button> : <button className="submit"onClick={submitForm}>Sign In</button>}
                     <span className="under-btn">
                         <p className="dont">Don't have an account already?</p>
                         <Link to="/signup" className='link'><p className="go-dont">Sign Up</p></Link>

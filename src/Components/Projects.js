@@ -3,7 +3,10 @@ import like from '../Assets/likebtn.svg';
 import doc from '../Assets/document-textdoc-txt.svg';
 import share from '../Assets/shareshare.svg';
 import axios from 'axios';
+import SideDrawer from './SideDrawer';
+import TopBar from './TopBar';
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 const Projects = () => {
     const [isPending, setIsPending] = useState(true);
@@ -24,6 +27,9 @@ const Projects = () => {
     }, []);
 
     return (  
+        <>
+        <TopBar />
+        <SideDrawer />
         <div className="projects">
             <div className="projects-main">
             <div className="projects-head">
@@ -33,7 +39,8 @@ const Projects = () => {
             <div className="projects-box">
             {isPending ? <p className="projects-box-loading">Loading...</p> : projects.map((projects)=>{
                 return(
-            <div className="projectsbox" onClick={toggle}>
+            <div className="projectsbox" onClick={toggle} key={projects.id}>
+                <Link to={`/projects/${projects.id}`} className="projectlinked">
                     <div className="projects-projectsbox">
                         <div className="projects-projectbox-img">
                         <img src={projects.img} alt="" />
@@ -61,6 +68,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+                </Link>
             </div>
             )})}
             </div>
@@ -80,6 +88,7 @@ const Projects = () => {
             </div>
             </div>
         </div>
+        </>
     );
 }
  

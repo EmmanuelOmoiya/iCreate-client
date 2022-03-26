@@ -41,9 +41,7 @@ const SignUp = () => {
                     "Content-type": "application/json",
                 },
             };
-            alert(info)
             const { data } = await axios.post("http://localhost:4080/api/user", {fullName, email, password}, config)
-                alert(data);
                 localStorage.setItem("userInfo", JSON.stringify(data));
                 window.location.replace('/dashboard');
         } catch (error){

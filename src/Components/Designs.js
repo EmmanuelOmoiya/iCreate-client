@@ -1,8 +1,13 @@
 import uploadIcon from '../Assets/document-uploadupload.svg';
 import comingSoon from '../Assets/coming-soon-logo.svg';
+import SideDrawer from './SideDrawer';
+import TopBar from './TopBar';
 
 const Designs = () => {
     return (  
+        <>
+        <TopBar/>
+        <SideDrawer/>
         <div className="designs">
             <h2 className="designs-title">Designs</h2>
             <div className="designs-main">
@@ -29,6 +34,7 @@ const Designs = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 }
  

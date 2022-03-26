@@ -2,6 +2,8 @@ import uploadIcon from '../Assets/document-uploadupload.svg';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ImageEDitor from './ImageEditor';
+import SideDrawer from './SideDrawer';
+import TopBar from './TopBar';
 const Create = () => {
     //let choose = document.getElementsByClassName('image-upload').click();
     const [projectName, setProjectName] = useState('');
@@ -43,6 +45,7 @@ const Create = () => {
             alert(err);
         })
     };
+    let id = projectName.split(' ').join('-');
     
     const uploadProject = async (e) =>{
         e.preventDefault();
@@ -50,7 +53,7 @@ const Create = () => {
         console.log('Posting');
 
         try{
-            const { data } = await axios.post("http://localhost:4080/api/project", {projectName, description, industry, hashTag, authorName, authorImg});
+            const { data } = await axios.post("http://localhost:4080/api/project", {projectName, description, industry, hashTag, authorName, authorImg, id});
                 console.log(data);
                 setIsPending(false);
                 window.location.replace('/projects');
@@ -67,6 +70,8 @@ const Create = () => {
 
     return (  
         <>
+        <TopBar/>
+        <SideDrawer/>
         <div className="create">
             <h3 className="create-title">Create New DP Banner</h3>
             { basicInfo && <div className="create-main">
@@ -88,14 +93,17 @@ const Create = () => {
                     <input type="text" className="create-form-input" placeholder='Hashtags e.g #CodeSandboxChallenge' value={hashTag} onChange={(e)=> setHashTag(e.target.value)} />
                     <p className="create-form-title">Campaign Image</p>
                     <div className="campaign-img">
+                        { picture ? <img src={picture && picture} alt="" className="picture-display"/> :
+                        <> 
                         <div className="campaign-img-top">
                             <img src={uploadIcon} alt="" className='designs-upload-icon campaign-uplic' />
                             <p className="uploadicon-tit" onClick="">Upload Image</p>
-                            <input type="file" accept="image/*" name="image" id="" onChange={(e)=> setPicture(URL.createObjectURL(e.target.files[0]))} className="image-upload"/>
+                            <input type="file" accept="image/*" name="image" id="" onChange={(e)=> setPicture(e.target.files[0])} className="image-upload"/>
                         </div>
                         <p className="campaign-img-under">Maximum size of image should be 10MB</p>
+                        </>
+                        }
                     </div>
-                    <img src={picture && picture} alt="" className="picture-display"/>
                     <div className="buttons">
                         <button className="create-next" onClick={toggle1} >Next</button>
                     </div>

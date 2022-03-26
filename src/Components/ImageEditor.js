@@ -19,8 +19,8 @@ const ImageEDitor = ({picture}) => {
                 menu: ["shape", "filter", "text", 'mask', "icon", "draw", "crop", "flip", "rotate"],
                 initMenu: "Loading image",
                 uiSize:{
-                    width: "700px",
-                    height: "400px",
+                    width: "70%",
+                    height: "60vh",
                 },
                 menuBarPosition: "bottom",
             }}

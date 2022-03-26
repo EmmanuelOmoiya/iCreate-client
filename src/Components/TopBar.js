@@ -48,12 +48,6 @@ const TopBar = () => {
                 <span className="top-icon l" onClick={toggle}>
                     <img src={arrowDown} alt="Arrow Down" />
                 </span>
-                <span className="top-icon">
-                    <img src={profileLogo} alt="Profile" />
-                </span>
-                <span className="top-icon">
-                    <img src={notificationLogo} alt="Notification" />
-                </span>
                 <div className={show ? "user-info" : "user-info active"}>
                     <span className="user-info-details">
                         <span className="user-img">
