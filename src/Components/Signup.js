@@ -10,11 +10,7 @@ const SignUp = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [interchange, setInterChange] = useState(false);
-    const info = [
-        fullName,
-        email,
-        password
-    ]
+
 
     const put = () =>{
         setInterChange(!interchange);

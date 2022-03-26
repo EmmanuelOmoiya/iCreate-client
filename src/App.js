@@ -2,9 +2,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Homepage from './Components/Homepage';
 import SignIn from './Components/Signin';
 import SignUp from './Components/Signup';
-import SideDrawer from './Components/SideDrawer';
-import Create from './Components/Create';
-import TopBar from './Components/TopBar';
+import Create from './Components/Create'
 import Designs from './Components/Designs';
 import Projects from './Components/Projects';
 import Settings from './Components/Settings';

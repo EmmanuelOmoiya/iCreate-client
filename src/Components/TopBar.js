@@ -1,5 +1,3 @@
-import notificationLogo from '../Assets/notificationnotify-topbar-icon.svg';
-import profileLogo from '../Assets/profile-circleprofile-topbar-icon.svg';
 import arrowDown from '../Assets/arrow-downdrop-topbar-icon.svg';
 import settings from '../Assets/setting-2setting-icon.svg';
 import logout from '../Assets/logoutlogout-icon.svg';

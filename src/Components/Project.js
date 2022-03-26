@@ -12,8 +12,14 @@ const Project = () => {
         <SideDrawer/>
         <div className="project">
             <div className="project-main">
-                
+                <h1>{project.map((data)=>{
+                    return(
+                        <p>{data.projectName}</p>
+                    )
+                })}</h1>
             </div>
+            {isPending && <p>Loading...</p>}
+            {error && <p>Error...</p>}
         </div>
         </>
     );
