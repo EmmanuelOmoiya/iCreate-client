@@ -10,9 +10,9 @@ const Landingpage = () => {
                 <img src={logo} alt="" className='landinglogo'/>
                 <div className="text">
                     <p className="Home">Home</p>
-                    <Link to="/projects" classname="button-link"> <p className="community">Community</p></Link>
+                    <Link to="/projects" className="button-link"> <p className="community">Community</p></Link>
                 </div>
-                <Link to="/signup" classname="button-link"><button className="landing-signup">Sign Up</button></Link>
+                <Link to="/signup" className="button-link"><button className="landing-signup">Sign Up</button></Link>
             </div>
             <div className="landinghero">
                 <div className="landing-hero-catch">
@@ -20,8 +20,8 @@ const Landingpage = () => {
                     <p className="landing-hero-catch-text"> Lift up your brand with iCreate. Create your Display pictures for evente, campaigns and much more. </p>
                 </div>
                 <div className="landing-buttons">
-                   <Link to="/demo" classname="button-link"><button className="demo">View Demo</button></Link>
-                   <Link to="/login" classname="button-link"><button className="getstarted">Get Started</button></Link>
+                   <Link to="/demo" className="button-link"><button className="demo">View Demo</button></Link>
+                   <Link to="/login" className="button-link"><button className="getstarted">Get Started</button></Link>
                 </div>
                 <img src={dashboard} alt="" className="cnter" />
                 <div className="sponsors">
@@ -32,8 +32,8 @@ const Landingpage = () => {
             </div>
             <div className="footer">
             <div className="footer-gist">
-                <img src={logo} alt="" />
-                <div className="table">
+                <img src={logo} alt="" className='logoes'/>
+                <tbody className="table">
   <tr>
     <th>Navigation</th>
     <th>Legal</th>
@@ -53,7 +53,7 @@ const Landingpage = () => {
   <tr>
     <td>Contact us</td>
   </tr>
-  </div>
+  </tbody>
             </div>
             </div>
             <hr />

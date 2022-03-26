@@ -1,8 +1,11 @@
-import logo from '../Assets/iCreateiCreate-logo.svg';
+import logo from '../Assets/realLogo.svg';
 import { useState } from 'react';
 import { FaRegEyeSlash } from 'react-icons/fa';
 import { IoEyeSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import leftLogo from '../Assets/Circular-linesclines.svg';
+import sharef from '../Assets/sharef.svg';
+import stuff from '../Assets/Finaldeda.svg';
 import axios from 'axios';
 
 const SignUp = () => {
@@ -54,10 +57,13 @@ const SignUp = () => {
         <> 
         <div className="signup">
             <div className="left">
+                <img src={leftLogo} alt="" className="leftlogo" />
+                <img src={sharef} alt="" className="sharelogo" />
+                <img src={stuff} alt="" className="fles" />
             </div>
             <div className="right">
-                <img src={logo} alt="Yoo" className="logo"/>
                 <form action="">
+                <img src={logo} alt="Yoo" className="logo"/>
                     <h2 className="head-label">Sign Up</h2>
                     <label htmlFor="Fullname" className="name-label">
                         <p>Fullname</p>

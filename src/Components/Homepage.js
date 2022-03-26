@@ -72,7 +72,7 @@ const Homepage = () => {
                         <h3>Activities</h3>
                         <p>DPs Applied</p>
                     </span>
-                    <span className="right">
+                    <span className="rightc">
                         <p className="week">Week</p>
                         <p className="month">Month</p>
                         <p className="year">Year</p>

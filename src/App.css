@@ -28,14 +28,21 @@ body{
 }
 
 .logo{
-  margin-top: 60px;
-  margin-left: 170px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  text-align: center;
+  align-items: center;
+  margin-right: auto;
+  width: 150px;
+  height: 50px;
 }
 
 form{
   font-family: 'Poppins', sans-serif;
   line-height: 1.75;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 20%;
 }
 
 .head-label{
@@ -54,6 +61,24 @@ form{
   padding: 15px;
   font-family: inherit;
   margin-bottom: 16px;
+}
+
+.leftlogo{
+  height: 100%;
+  width: 90%;
+}
+
+.sharelogo{
+  position: absolute;
+  width: 15%;
+  margin-top: 100px;
+}
+
+.fles{
+  position: absolute;
+  width: 20%;
+  margin-top: 16%;
+  margin-left: 20%;
 }
 
 label p{
@@ -361,7 +386,7 @@ label p{
   width: 100px;
 }
 
-.right p{
+.rightc p{
   width: 50px;
   height: 20px;
   cursor: pointer;
@@ -1199,6 +1224,7 @@ input[type="file"]{
   border: none;
   font-size: 15px;
   margin-right: 100px;
+  cursor: pointer;
 }
 
 .landing-hero-catch{
@@ -1232,7 +1258,7 @@ input[type="file"]{
   display: flex;
   text-align: center;
   align-items: center;
-  width: 25%;
+  width: 23%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -1277,11 +1303,14 @@ input[type="file"]{
   display: flex;
   text-align: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 25px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sponsors img{
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .projectlinked{
@@ -1289,7 +1318,26 @@ input[type="file"]{
   color: #000;
 }
 
+.logoes{
+  margin-right: 80px;
+
+}
+
 .button-link{
   text-decoration: none;
   color: #000;
+  cursor: pointer;
+}
+
+.footer-gist{
+  display: flex;
+  padding: 15px;
+}
+
+th{
+  margin-bottom: 30px;
+}
+
+td{
+  margin-bottom: 50px;
 }
