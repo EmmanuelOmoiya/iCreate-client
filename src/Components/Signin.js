@@ -26,7 +26,7 @@ const SignIn = () => {
                     "Content-type": "application/json",
                 },
             };
-            const { data } = await axios.post("http://localhost:4080/api/user/login", {email, password} , config);
+            const { data } = await axios.post("https://icreate-server.herokuapp.com/api/user/login", {email, password} , config);
                 localStorage.setItem("userInfo", JSON.stringify(data));
                 setIsPending(false);
                 window.location.replace('/dashboard');

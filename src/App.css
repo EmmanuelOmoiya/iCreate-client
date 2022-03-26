@@ -35,7 +35,6 @@ body{
 form{
   font-family: 'Poppins', sans-serif;
   line-height: 1.75;
-  margin-left: 60px;
   margin-top: 40px;
 }
 
@@ -1278,6 +1277,7 @@ input[type="file"]{
   display: flex;
   text-align: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .sponsors img{

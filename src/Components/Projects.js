@@ -16,7 +16,7 @@ const Projects = () => {
     }
     const [projects, setProjects] = useState([]);
     const fetch = async() =>{
-        const { data } =  await axios.get("http://localhost:4080/api/project");
+        const { data } =  await axios.get("https://icreate-server.herokuapp.com/api/project");
         console.log(data);
         setProjects(data);
     }

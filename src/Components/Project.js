@@ -5,7 +5,7 @@ import { useParams } from "react-router";
 
 const Project = () => {
     const {id} = useParams();
-    const { data: project, isPending, error } = axios.get('http://localhost://4080/projects/' + id);
+    const { data: project, isPending, error } = axios.get('https://icreate-server.herokuapp.com/projects/' + id);
     return ( 
         <>
         <TopBar/>

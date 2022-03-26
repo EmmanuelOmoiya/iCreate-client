@@ -11,7 +11,7 @@ const TopBar = () => {
     const [query, setQuery] = useState("");
     const [projects, setProjects] = useState("");
     const fetch = async() =>{
-        const { data } =  await axios.get("http://localhost:4080/api/project");
+        const { data } =  await axios.get("https://icreate-server.herokuapp.com/");
         console.log(data);
         setProjects(data);
     }

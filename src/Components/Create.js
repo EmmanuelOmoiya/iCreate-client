@@ -53,7 +53,7 @@ const Create = () => {
         console.log('Posting');
 
         try{
-            const { data } = await axios.post("http://localhost:4080/api/project", {projectName, description, industry, hashTag, authorName, authorImg, id});
+            const { data } = await axios.post("https://icreate-server.herokuapp.com/api/project", {projectName, description, industry, hashTag, authorName, authorImg, id});
                 console.log(data);
                 setIsPending(false);
                 window.location.replace('/projects');

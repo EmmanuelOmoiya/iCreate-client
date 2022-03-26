@@ -22,7 +22,7 @@ const Homepage = () => {
         }
     }, []);
 
-    const num = axios.get(`http://localhost:5000/api/project/${user.fullName}`);
+    const num = axios.get(`https://icreate-server.herokuapp.com/api/project/${user.fullName}`);
     const dpNum = num.length;
     return ( 
         <>
