@@ -6,7 +6,6 @@ import designLogo from '../Assets/pathdesign-icon.svg';
 import projectLogo from '../Assets/layerprojects-icon.svg';
 import settingsLogo from '../Assets/setting-2setting-icon.svg';
 import logoutLogo from '../Assets/logoutlogout-icon.svg';
-import {useState} from 'react';
 
 const SideDrawer = () => {
     const link = window.location.pathname.substring(1);

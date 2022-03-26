@@ -33,7 +33,7 @@ const TopBar = () => {
     
     return (
         <div className="topbar">
-            <input type="text" placeholder="Search for Projects" onChange={(e)=>setQuery(e.target.value)}/>
+            <input type="text" placeholder="Search for Projects" value={query} onChange={(e)=>setQuery(e.target.value)}/>
             <div className="inputSearch">
             <div  className="searchResult">
                             <Link to={`/project/${projects.id}`}>
