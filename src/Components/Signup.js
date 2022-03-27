@@ -39,7 +39,7 @@ const SignUp = () => {
         try{
             const config = {
                 headers: {
-                    "Content-type": "application/json",
+                    "Content-Type": "application/json",
                 },
             };
             const { data } = await axios.post("https://icreate-server.herokuapp.com/api/user", {fullName, email, password}, config)
