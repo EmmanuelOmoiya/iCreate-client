@@ -43,6 +43,9 @@ const SignUp = () => {
                 },
             };
             const { data } = await axios.post("https://icreate-server.herokuapp.com/api/user", {fullName, email, password}, config)
+            .then((res)=>{
+                console.log(res);
+            })
                 localStorage.setItem("userInfo", JSON.stringify(data));
                 setIsPending(false);
                 window.location.replace('/dashboard');
